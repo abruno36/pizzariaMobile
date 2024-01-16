@@ -39,7 +39,7 @@ export default function SignIn() {
 
   return (
     <View style={styles.container}>
-      <Container style={{ top: 0 }} />
+      <Container style={{ top: 0, height: 50, width: 300 }} />
       <Image
         style={styles.logo}
         source={require('../../assets/logo.png')}
