@@ -15,7 +15,10 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -23,11 +26,7 @@
         "backgroundColor": "#1D1D2E"
       },
       "package": "com.company.pizzaria",
-      "config": {
-        "googleMaps": {
-          "apiKey": "AIzaSyCxYP4EboYGffAj8GiSG2b2Q5Uh88fqNjI"
-        }
-      }
+      "runtimeVersion": "1.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -36,6 +35,9 @@
       "eas": {
         "projectId": "942969d4-d3d4-476b-8fd2-1867fc474403"
       }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/942969d4-d3d4-476b-8fd2-1867fc474403"
     }
   }
 }
