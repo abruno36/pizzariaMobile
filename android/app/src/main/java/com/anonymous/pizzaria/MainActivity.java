@@ -1,4 +1,4 @@
-package com.anonymous.pizzariaMobile;
+package com.anonymous.pizzaria;
 
 import android.os.Build;
 import android.os.Bundle;

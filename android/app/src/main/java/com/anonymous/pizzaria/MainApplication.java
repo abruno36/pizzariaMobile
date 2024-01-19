@@ -1,4 +1,4 @@
-package com.anonymous.pizzariaMobile;
+package com.anonymous.pizzaria;
 
 import android.app.Application;
 import android.content.res.Configuration;
