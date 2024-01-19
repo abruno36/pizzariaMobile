@@ -101,7 +101,7 @@ export default function Order(){
         }
       })
 
-      navigation.goBack();
+      navigation.goBack(); //retornar para a tela anterior
 
     }catch(err){
       console.log(err)

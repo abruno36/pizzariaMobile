@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "pizzariaMobile",
-    "slug": "pizzariaMobile",
+    "name": "Pizzaria",
+    "slug": "pizzaria",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1D1D2E"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -19,8 +19,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#1D1D2E"
+      },
+      "package": "com.anonymous.pizzaria",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCxYP4EboYGffAj8GiSG2b2Q5Uh88fqNjI"
+        }
       }
     },
     "web": {

@@ -28,7 +28,7 @@ export default function FinishOrder(){
         order_id: route.params?.order_id
       })
 
-      navigation.popToTop();
+      navigation.popToTop(); //voltar para o inicio da primeira tela
 
     }catch(err){
       console.log("ERRO AO FINALIZAR, tente mais tarde")
