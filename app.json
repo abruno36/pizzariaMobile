@@ -22,7 +22,7 @@
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#1D1D2E"
       },
-      "package": "com.anonymous.pizzaria",
+      "package": "com.company.pizzaria",
       "config": {
         "googleMaps": {
           "apiKey": "AIzaSyCxYP4EboYGffAj8GiSG2b2Q5Uh88fqNjI"
@@ -31,6 +31,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "942969d4-d3d4-476b-8fd2-1867fc474403"
+      }
     }
   }
 }

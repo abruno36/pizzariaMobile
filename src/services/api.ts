@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { parseCookies } from 'nookies';
 import { API_URL } from '../../env.json';
 
 const api = axios.create({

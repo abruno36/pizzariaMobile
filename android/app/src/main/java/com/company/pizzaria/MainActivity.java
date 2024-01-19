@@ -1,4 +1,4 @@
-package com.anonymous.pizzaria;
+package com.company.pizzaria;
 
 import android.os.Build;
 import android.os.Bundle;

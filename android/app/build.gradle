@@ -81,9 +81,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace 'com.anonymous.pizzaria'
+    namespace 'com.company.pizzaria'
     defaultConfig {
-        applicationId 'com.anonymous.pizzaria'
+        applicationId 'com.company.pizzaria'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
