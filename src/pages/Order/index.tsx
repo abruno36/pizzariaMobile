@@ -6,7 +6,8 @@ import {
   TouchableOpacity,
   TextInput,
   Modal,
-  FlatList
+  FlatList,
+  Alert
  } from 'react-native';
 
 import { useRoute, RouteProp, useNavigation } from '@react-navigation/native';
@@ -18,6 +19,8 @@ import { ListItem } from '../../components/ListItem';
 
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { StackPramsList }  from '../../routes/app.routes';
+
+import Container, { Toast } from 'toastify-react-native';
 
 type RouteDetailParams = {
   Order:{
@@ -119,6 +122,12 @@ export default function Order(){
 
   // adcionando um produto nessa mesa
   async function handleAdd(){
+
+    if(amount > 20){
+      Toast.error('A quantidade maior que 20', "10");
+      return
+    }
+
     const response = await api.post('/order/add', {
       order_id: route.params?.order_id,
       product_id: productSelected?.id,
@@ -131,7 +140,9 @@ export default function Order(){
       name: productSelected?.name as string,
       amount: amount
     }
-    setItems(oldArray => [...oldArray, data]) //pegando todos e adicionando o item novo
+
+
+    setItems((oldArray: any) => [...oldArray, data]) //pegando todos e adicionando o item novo
   }
 
   // removando um item nessa mesa
@@ -160,7 +171,7 @@ export default function Order(){
 
   return(
     <View style={styles.container}>
-      
+      <Container style={{ top: 0, height: 50, width: 300 }} />
       <View style={styles.header}>
         <Text style={styles.title}>Mesa {route.params.number}</Text>
         {items.length === 0 && (
