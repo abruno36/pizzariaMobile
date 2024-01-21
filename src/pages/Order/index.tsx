@@ -124,7 +124,7 @@ export default function Order(){
   async function handleAdd(){
 
     if(amount > 20){
-      Toast.error('A quantidade maior que 20', "10");
+      Toast.error('Qtde deve ser menor que 20', "10");
       return
     }
 
